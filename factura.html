@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="factura.css">
+    <title>Detalles de la Compra</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Detalles de la compra</h2>
+        </div>
+        <div class="product">
+            <img src="images/Herrammienta1.png" alt="Producto">
+            <div class="product-details">
+                <p>Total de compra: $<span id="total-compra"></span></p>
+                <p>Total de envío: $<span id="total-envio"></span></p>
+                <p>Total del pedido: $<span id="total-pedido"></span></p>
+            </div>
+        </div>
+        <div class="detail">
+            <p><strong>Medio de pago</strong></p>
+            <p>NEQUI</p>
+        </div>
+        <div class="detail">
+            <p><strong>ID del pedido</strong></p>
+            <p>2406481011</p>
+        </div>
+        <div class="detail">
+            <p><strong>Fecha del pedido:</strong> <span id="fecha-actual"></span></p>
+            <p><strong>Tiempo estimado de envío:</strong> <span id="fecha-estimada-entrega"></span></p>
+        </div>
+        <div class="buttons">
+            <a href="../servicios/servicios.html" class="button whatsapp">Comunícate con el vendedor</a>
+            <a href="javascript:void(0);" class="button" onclick="imprimirFactura()">Imprimir Factura</a>
+        </div>
+    </div>
+    <script src="factura.js"></script>
+    <script>
+        function imprimirFactura() {
+    window.print();
+}
+    </script>
+    
+
+</body>
+</html>
